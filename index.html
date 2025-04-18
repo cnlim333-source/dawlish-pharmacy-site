@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dawlish Warren Pharmacy</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800">
+  <!-- Header -->
+  <header class="bg-blue-800 text-white p-6 shadow-md">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Dawlish Warren Pharmacy</h1>
+      <nav class="space-x-4">
+        <a href="#home" class="hover:underline">Home</a>
+        <a href="#about" class="hover:underline">About Us</a>
+        <a href="#services" class="hover:underline">Services</a>
+        <a href="#book" class="hover:underline">Book</a>
+        <a href="#prescription" class="hover:underline">Prescription</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Home -->
+  <section id="home" class="py-16 text-center bg-gray-50">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-4xl font-bold mb-4">Welcome to Dawlish Warren Pharmacy</h2>
+      <p class="text-lg mb-6">Providing trusted NHS services and healthcare in your community.</p>
+      <a href="#book" class="bg-blue-700 text-white px-6 py-3 rounded-full hover:bg-blue-900">Book an Appointment</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-4">About Us</h2>
+      <p>We are a friendly, community-focused pharmacy offering a wide range of NHS and private services. Our experienced team is here to help with advice, support, and care.</p>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-16 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-8 text-center">Our Services</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div><h3 class="font-semibold text-xl">NHS Pharmacy First</h3><p>Quick and easy help for minor conditions without needing a GP appointment.</p></div>
+        <div><h3 class="font-semibold text-xl">COVID-19 Vaccination</h3><p>Protect yourself and your community with our vaccination service.</p></div>
+        <div><h3 class="font-semibold text-xl">Blood Pressure Checks</h3><p>Monitor your heart health with professional, accurate checks.</p></div>
+        <div><h3 class="font-semibold text-xl">Contraception Services</h3><p>Accessible and confidential contraceptive care.</p></div>
+        <div><h3 class="font-semibold text-xl">Travel Clinic</h3><p>Vaccines and advice to keep you healthy abroad.</p></div>
+        <div><h3 class="font-semibold text-xl">Weight Loss Support</h3><p>Guidance and products to support your weight loss journey.</p></div>
+        <div><h3 class="font-semibold text-xl">Ear Wax Removal</h3><p>Safe and effective ear care using professional equipment.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Form -->
+  <section id="book" class="py-16 bg-white">
+    <div class="max-w-3xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-4">Book an Appointment</h2>
+      <form class="space-y-4">
+        <input type="text" placeholder="Full Name" class="w-full border p-3 rounded" required />
+        <input type="email" placeholder="Email Address" class="w-full border p-3 rounded" required />
+        <select class="w-full border p-3 rounded">
+          <option>Select a service</option>
+          <option>NHS Pharmacy First</option>
+          <option>COVID-19 Vaccination</option>
+          <option>Blood Pressure Check</option>
+          <option>Contraception</option>
+          <option>Travel Clinic</option>
+          <option>Weight Loss</option>
+          <option>Ear Wax Removal</option>
+        </select>
+        <input type="date" class="w-full border p-3 rounded" required />
+        <textarea placeholder="Notes" class="w-full border p-3 rounded"></textarea>
+        <button type="submit" class="bg-blue-700 text-white px-6 py-3 rounded hover:bg-blue-900">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Prescription Request -->
+  <section id="prescription" class="py-16 bg-gray-50">
+    <div class="max-w-3xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-4">Request a Prescription</h2>
+      <form class="space-y-4">
+        <input type="text" placeholder="Full Name" class="w-full border p-3 rounded" required />
+        <input type="date" placeholder="Date of Birth" class="w-full border p-3 rounded" required />
+        <textarea placeholder="Medication Details" class="w-full border p-3 rounded" required></textarea>
+        <input type="text" placeholder="GP Details (optional)" class="w-full border p-3 rounded" />
+        <select class="w-full border p-3 rounded">
+          <option>Collection method</option>
+          <option>Pick up at pharmacy</option>
+          <option>Home delivery</option>
+        </select>
+        <button type="submit" class="bg-blue-700 text-white px-6 py-3 rounded hover:bg-blue-900">Submit Request</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
+      <p class="mb-2">Phone: 01234 567890</p>
+      <p class="mb-2">Email: info@dawlishwarrenpharmacy.co.uk</p>
+      <p class="mb-2">Address: Dawlish Warren, EX7 XYZ</p>
+      <p class="mb-2">Opening Hours: Mon–Fri 9am–6pm | Sat 9am–1pm</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-800 text-white text-center p-4">
+    <p>&copy; 2025 Dawlish Warren Pharmacy. All rights reserved.</p>
+  </footer>
+</body>
+</html>
