@@ -3,50 +3,127 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Our Services - Dawlish Warren Pharmacy</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>Services - Dawlish Warren Pharmacy</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    :root {
+      --primary-color: #007acc;
+      --secondary-color: #ffffff;
+      --accent-color: #eaf6fb;
+      --text-color: #2c3e50;
+    }
+
+    * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f4;
     }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--accent-color);
+      color: var(--text-color);
+    }
+
     header {
-      background-color: #0a5d5e;
-      color: white;
-      padding: 1rem;
+      background-color: var(--primary-color);
+      color: var(--secondary-color);
+      padding: 1.5rem 2rem;
       text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
+
+    nav {
+      margin-top: 1rem;
+    }
+
     nav a {
-      color: white;
-      margin: 0 10px;
+      color: var(--secondary-color);
+      margin: 0 1rem;
       text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
     }
+
     nav a:hover {
-      text-decoration: underline;
+      color: #dff6ff;
     }
-    section {
-      padding: 2rem;
-    }
-    footer {
-      background-color: #333;
+
+    .hero {
+      background-color: var(--primary-color);
       color: white;
+      padding: 6rem 2rem;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .services-section {
+      padding: 4rem 2rem;
+      background-color: var(--secondary-color);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 2rem;
+    }
+
+    .service-card {
+      background-color: var(--accent-color);
+      border: 1px solid #cce7f0;
+      border-radius: 10px;
+      padding: 2rem;
+      max-width: 320px;
+      width: 100%;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    .service-card h3 {
+      margin-bottom: 1rem;
+      color: var(--primary-color);
+    }
+
+    .service-card p {
+      font-size: 1rem;
+      color: var(--text-color);
+      margin-bottom: 1.5rem;
+    }
+
+    .service-card a {
+      text-decoration: none;
+      color: var(--primary-color);
+      font-weight: 600;
+      padding: 0.5rem 1rem;
+      border: 2px solid var(--primary-color);
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .service-card a:hover {
+      background-color: var(--primary-color);
+      color: white;
+    }
+
+    footer {
+      background-color: #2c3e50;
+      color: var(--secondary-color);
       text-align: center;
       padding: 1rem;
-      position: fixed;
-      width: 100%;
-      bottom: 0;
-    }
-    ul {
-      list-style-type: square;
-      padding-left: 1.5rem;
+      margin-top: 2rem;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Our Services</h1>
+    <h1>Dawlish Warren Pharmacy</h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About Us</a>
@@ -55,22 +132,51 @@
     </nav>
   </header>
 
-  <section>
-    <h2>What We Offer</h2>
-    <p>At Dawlish Warren Pharmacy, we offer a wide range of NHS and private services tailored to support your health and wellbeing. Our services include:</p>
-    <ul>
-      <li><strong>NHS Pharmacy First Service</strong> – Quick and easy access to advice and treatment for common conditions without needing a GP appointment.</li>
-      <li><strong>COVID-19 Vaccinations</strong> – Get vaccinated safely and efficiently at our pharmacy.</li>
-      <li><strong>Blood Pressure Checks</strong> – Monitor and manage your blood pressure with our professional support.</li>
-      <li><strong>Contraception Services</strong> – Access confidential and professional contraceptive advice and supply.</li>
-      <li><strong>Travel Clinic</strong> – Prepare for your travels with vaccinations and advice tailored to your destination.</li>
-      <li><strong>Weight Loss Support</strong> – Join our weight management programmes with personalised guidance and medication options.</li>
-      <li><strong>Ear Wax Removal</strong> – Safe and effective ear wax removal by trained professionals.</li>
-    </ul>
+  <section class="hero">
+    <h1>Our Services</h1>
+    <p>We offer a wide range of pharmacy services to meet your health needs. Whether you're looking for advice, vaccinations, or ongoing care, we're here to help!</p>
+  </section>
+
+  <section class="services-section">
+    <div class="service-card">
+      <h3>Pharmacy First Service</h3>
+      <p>Get treated for common illnesses without needing a GP appointment. We offer expert advice and treatments for minor conditions.</p>
+      <a href="services.html#pharmacy-first">Learn More</a>
+    </div>
+
+    <div class="service-card">
+      <h3>Vaccinations</h3>
+      <p>COVID-19, flu, and travel vaccinations available for all age groups. Protect yourself and your loved ones with our expert vaccination services.</p>
+      <a href="services.html#vaccinations">Learn More</a>
+    </div>
+
+    <div class="service-card">
+      <h3>Blood Pressure Checks</h3>
+      <p>Walk-in blood pressure checks with follow-up advice. We can help you manage your health with simple, non-invasive tests.</p>
+      <a href="services.html#bp-checks">Learn More</a>
+    </div>
+
+    <div class="service-card">
+      <h3>Weight Loss Support</h3>
+      <p>Struggling with weight loss? Our personalized support and guidance can help you achieve your health goals.</p>
+      <a href="services.html#weight-loss">Learn More</a>
+    </div>
+
+    <div class="service-card">
+      <h3>Ear Wax Removal</h3>
+      <p>Safe, professional ear wax removal service to ensure optimal ear health. Book your appointment today!</p>
+      <a href="services.html#ear-wax">Learn More</a>
+    </div>
+
+    <div class="service-card">
+      <h3>Contraception Advice</h3>
+      <p>We offer confidential contraception advice, including prescriptions for a variety of birth control methods.</p>
+      <a href="services.html#contraception">Learn More</a>
+    </div>
   </section>
 
   <footer>
-    <p>© 2025 Dawlish Warren Pharmacy | info@dawlishwarrenpharmacy.com | 01234 567890</p>
+    <p>© 2025 Dawlish Warren Pharmacy | info@dawlishwarrenpharmacy.com</p>
   </footer>
 </body>
 </html>
