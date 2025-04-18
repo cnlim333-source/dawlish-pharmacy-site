@@ -3,13 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home - Dawlish Warren Pharmacy</title>
+  <title>Welcome to Dawlish Warren Pharmacy</title>
   <style>
     :root {
       --primary-color: #007acc;
       --secondary-color: #ffffff;
       --accent-color: #eaf6fb;
       --text-color: #2c3e50;
+      --hover-color: #ff8c00;
+      --button-color: #ffffff;
     }
 
     * {
@@ -20,16 +22,28 @@
 
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: var(--accent-color);
+      background: linear-gradient(to right, #eaf6fb, #f2f7fa);
       color: var(--text-color);
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
 
     header {
       background-color: var(--primary-color);
       color: var(--secondary-color);
-      padding: 1.5rem 2rem;
+      padding: 2rem 3rem;
       text-align: center;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    header h1 {
+      font-size: 3.5rem;
+      font-weight: bold;
+      letter-spacing: 1px;
     }
 
     nav {
@@ -41,62 +55,84 @@
       margin: 0 1rem;
       text-decoration: none;
       font-weight: 600;
+      font-size: 1.1rem;
       transition: color 0.3s;
     }
 
     nav a:hover {
-      color: #dff6ff;
+      color: var(--hover-color);
     }
 
     .hero {
-      background-image: url('pharmacy.jpg');
-      background-size: cover;
-      background-position: center;
-      color: white;
-      padding: 6rem 2rem;
+      background: url('your-image.jpg') center/cover no-repeat;
+      color: var(--secondary-color);
+      padding: 8rem 2rem;
       text-align: center;
+      border-bottom: 4px solid #ff8c00;
+      position: relative;
     }
 
     .hero h1 {
-      font-size: 3rem;
+      font-size: 4rem;
       margin-bottom: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
     }
 
     .hero p {
       font-size: 1.25rem;
-      max-width: 600px;
+      max-width: 800px;
       margin: 0 auto;
+      line-height: 1.6;
     }
 
-    .info-section {
-      padding: 3rem 2rem;
+    .hero button {
+      margin-top: 2rem;
+      padding: 1rem 2rem;
+      background-color: var(--primary-color);
+      color: var(--secondary-color);
+      border: none;
+      border-radius: 50px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .hero button:hover {
+      background-color: var(--hover-color);
+    }
+
+    .about {
+      padding: 6rem 2rem;
+      text-align: center;
       background-color: var(--secondary-color);
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      gap: 2rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      margin-top: 3rem;
     }
 
-    .info-card {
-      background-color: var(--accent-color);
-      border: 1px solid #cce7f0;
-      border-radius: 10px;
-      padding: 1.5rem;
-      max-width: 300px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    }
-
-    .info-card h3 {
-      margin-bottom: 0.5rem;
+    .about h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
       color: var(--primary-color);
+    }
+
+    .about p {
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.8;
     }
 
     footer {
       background-color: #2c3e50;
       color: var(--secondary-color);
       text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
+      padding: 1.5rem;
+      margin-top: 4rem;
+    }
+
+    footer p {
+      font-size: 1rem;
     }
   </style>
 </head>
@@ -113,22 +149,13 @@
 
   <section class="hero">
     <h1>Your Health, Our Priority</h1>
-    <p>Welcome to Dawlish Warren Pharmacy. Reliable care, expert advice, and NHS-backed services — all under one roof.</p>
+    <p>We offer expert pharmaceutical services, from general advice to essential treatments, all tailored to you.</p>
+    <button onclick="window.location.href='services.html'">Explore Our Services</button>
   </section>
 
-  <section class="info-section">
-    <div class="info-card">
-      <h3>Pharmacy First Service</h3>
-      <p>Get treated for common illnesses without needing a GP appointment.</p>
-    </div>
-    <div class="info-card">
-      <h3>Vaccinations</h3>
-      <p>COVID-19, flu and travel vaccinations available for all age groups.</p>
-    </div>
-    <div class="info-card">
-      <h3>Blood Pressure Checks</h3>
-      <p>Walk-in BP checks with follow-up advice and care plans.</p>
-    </div>
+  <section class="about">
+    <h2>About Dawlish Warren Pharmacy</h2>
+    <p>At Dawlish Warren Pharmacy, we’re committed to your health and well-being. Our pharmacy provides a wide range of services, including prescription medication, health consultations, vaccinations, and much more. With our knowledgeable team and personalized care, we’re here to support you every step of the way.</p>
   </section>
 
   <footer>
