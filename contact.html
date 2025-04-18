@@ -6,46 +6,75 @@
   <title>Contact Us - Dawlish Warren Pharmacy</title>
   <link rel="stylesheet" href="styles.css" />
   <style>
+    :root {
+      --primary-color: #0a5d5e;
+      --secondary-color: #fff;
+      --accent-color: #e6f7f7;
+      --text-color: #333;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f4;
+      background-color: var(--accent-color);
+      color: var(--text-color);
     }
+
     header {
-      background-color: #0a5d5e;
-      color: white;
-      padding: 1rem;
+      background-color: var(--primary-color);
+      color: var(--secondary-color);
+      padding: 1.5rem;
       text-align: center;
     }
+
     nav a {
-      color: white;
-      margin: 0 10px;
+      color: var(--secondary-color);
+      margin: 0 15px;
       text-decoration: none;
+      font-weight: bold;
     }
+
     nav a:hover {
       text-decoration: underline;
     }
+
     section {
       padding: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 70vh;
     }
+
+    .contact-info {
+      background-color: var(--secondary-color);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      width: 100%;
+    }
+
+    .contact-info h2 {
+      color: var(--primary-color);
+      margin-bottom: 20px;
+    }
+
+    .contact-info p {
+      margin: 0.75rem 0;
+      line-height: 1.6;
+    }
+
     footer {
       background-color: #333;
       color: white;
       text-align: center;
       padding: 1rem;
-      position: fixed;
-      width: 100%;
-      bottom: 0;
-    }
-    .contact-info {
-      background-color: #ffffff;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    .contact-info p {
-      margin: 0.5rem 0;
     }
   </style>
 </head>
